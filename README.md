@@ -18,6 +18,12 @@ This project was created to address these challenges by building an intelligent 
 - Provide real-time performance metrics for system evaluation
 - Scale to handle large engineering knowledge bases through vectorized search
 
+## 🚀 Live Demo
+
+Try the application online: **[Engineering Intelligence AI - Live Demo](https://testpilot-ai-2lch.onrender.com)**
+
+The application is deployed and ready to use. Simply visit the link and start analyzing your engineering queries!
+
 ## Technology Stack
 
 ### Why This Stack?
@@ -193,9 +199,16 @@ streamlit run frontend/app.py
 
 ### Step 7: Access the Application
 
+#### Local Development
 - **Backend API**: http://localhost:8000
 - **API Documentation**: http://localhost:8000/docs
-- **Frontend Interface**: http://localhost:7001
+- **Frontend Interface**: http://localhost:8501 (Streamlit default port)
+
+#### Live Demo (Production)
+- **Frontend Interface**: https://testpilot-ai-2lch.onrender.com
+- **Interactive API Docs**: https://testpilot-ai-2lch.onrender.com/docs
+
+> NOTE: Frontend is deployed at the provided live URL, and the same domain exposes the FastAPI docs on `/docs`.
 
 ## Usage Examples
 
@@ -235,7 +248,25 @@ if st.button("Analyze"):
     # Performance metrics visualization
 ```
 
-## API Endpoints
+## API Endpoints & Interactive Documentation
+
+### 📚 Interactive API Explorer (Swagger UI)
+
+FastAPI automatically generates interactive API documentation that allows you to explore and test all endpoints directly in your browser.
+
+**Access the Interactive UI:**
+```
+http://localhost:8000/docs
+```
+
+This Swagger UI interface provides:
+- ✅ Complete list of all available endpoints
+- ✅ Request/response schema visualization
+- ✅ **Try it out** button to test endpoints directly
+- ✅ Real-time API responses shown in the browser
+- ✅ Automatic documentation from code
+
+Simply navigate to `/docs` while the backend is running to see the interactive API explorer!
 
 ### Health Check
 ```http
@@ -252,6 +283,8 @@ Content-Type: application/json
   "query": "Your engineering question here"
 }
 ```
+
+**Test in Swagger UI:** Open http://localhost:8000/docs and click on the `/query` endpoint to test it interactively!
 
 ## Configuration
 

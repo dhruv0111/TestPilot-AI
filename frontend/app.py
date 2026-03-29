@@ -9,7 +9,7 @@ st.subheader("LLM + RAG + ML System for Bug Analysis")
 
 # ------------------- BACKEND STATUS -------------------
 try:
-    requests.get("http://localhost:8000/health")
+    requests.get("https://backend-ai-x6r7.onrender.com/health")
     st.success("🟢 Backend Connected")
 except:
     st.error("🔴 Backend Not Running")
@@ -31,7 +31,7 @@ if st.button("Analyze"):
 
             try:
                 res = requests.post(
-                    "http://localhost:8000/query",
+                    "https://backend-ai-x6r7.onrender.com/query",
                     json={"query": query}
                 )
 
