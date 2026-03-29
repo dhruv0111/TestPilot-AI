@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+streamlit
+requests
+scikit-learn
+joblib
+langchain
+langchain-community
+openai
+faiss-cpu

@@ -1,0 +1,5 @@
+ERROR: NullPointerException at AuthService.java:45
+ERROR: Token missing in request header
+ERROR: Database timeout at PaymentService
+ERROR: Connection pool exhausted
+ERROR: Internal server error in UserProfileService

@@ -1,0 +1,23 @@
+[
+  {
+    "bug_id": "BUG-101",
+    "description": "Login API fails when token is null",
+    "severity": "High",
+    "module": "Authentication",
+    "resolution": "Validate token before processing request"
+  },
+  {
+    "bug_id": "BUG-102",
+    "description": "Payment API timeout during peak traffic",
+    "severity": "Critical",
+    "module": "Payments",
+    "resolution": "Optimize DB queries and increase timeout threshold"
+  },
+  {
+    "bug_id": "BUG-103",
+    "description": "User profile API returns 500 error",
+    "severity": "Medium",
+    "module": "User Service",
+    "resolution": "Fix null pointer exception in profile service"
+  }
+]
