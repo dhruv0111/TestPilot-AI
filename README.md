@@ -208,6 +208,9 @@ streamlit run frontend/app.py
 - **Frontend Interface**: https://testpilot-ai-2lch.onrender.com
 - **Interactive API Docs**: https://testpilot-ai-2lch.onrender.com/docs
 
+#### Publication
+- **Research Paper**: https://zenodo.org/records/19338786
+
 > NOTE: Frontend is deployed at the provided live URL, and the same domain exposes the FastAPI docs on `/docs`.
 
 ## Usage Examples
