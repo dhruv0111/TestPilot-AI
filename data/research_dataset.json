@@ -1,0 +1,26 @@
+[
+  {
+    "query": "Why did login API fail?",
+    "failures": 10,
+    "avg_response_time": 180,
+    "error_rate": 0.3,
+    "high_severity_bugs": 5,
+    "label": 1
+  },
+  {
+    "query": "Why payment API is slow?",
+    "failures": 15,
+    "avg_response_time": 250,
+    "error_rate": 0.4,
+    "high_severity_bugs": 6,
+    "label": 1
+  },
+  {
+    "query": "User profile not loading",
+    "failures": 2,
+    "avg_response_time": 120,
+    "error_rate": 0.05,
+    "high_severity_bugs": 1,
+    "label": 0
+  }
+]
