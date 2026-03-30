@@ -1,0 +1,64 @@
+Title: LLM-Powered Engineering Intelligence System for Bug Analysis & Failure Prediction
+
+Overview: 
+This project is an AI-powered engineering assistant that analyzes software failures using LLMs, Retrieval-Augmented Generation (RAG), and Machine Learning.
+
+It helps developers and QA engineers identify root causes, assess risk, and generate test strategies automatically.
+
+Features:
+- Root cause analysis from logs, bugs, and code
+- Risk prediction using ML model (Logistic Regression)
+- RAG-based knowledge retrieval (FAISS)
+- Structured debugging output (Root cause, Risk, Test cases)
+- Real-time metrics (latency, retrieval score, response quality)
+- Interactive UI (Streamlit)
+
+Architecture:
+User Query
+   ↓
+Frontend (Streamlit)
+   ↓
+FastAPI Backend
+   ↓
+RAG Pipeline (FAISS + Embeddings)
+   ↓
+LLM (Reasoning Engine)
+   ↓
+ML Model (Risk Prediction)
+   ↓
+Response + Metrics
+
+Example Output:
+Query: Why is Payment API slow?
+
+Root Cause: Database timeout during peak traffic  
+Risk Level: Critical  
+Suggested Tests:
+- Load testing under peak traffic
+- Query optimization validation
+- Timeout threshold testing
+
+Metrics:
+
+- Latency (sec)
+- Retrieval Accuracy
+- Response Quality Score
+- Risk Prediction Confidence
+
+Tech Stack:
+- Python, FastAPI
+- Streamlit
+- FAISS (Vector DB)
+- OpenAI / LLM
+- Scikit-learn (ML)
+- Docker (optional)
+- Render (Deployment)
+
+Future Improvements:
+- Multi-agent architecture
+- Graph-based debugging
+- Real-time log ingestion
+- CI/CD integration
+
+Live Demo:
+Frontend: https://testpilot-ai-2lch.onrender.com
